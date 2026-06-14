@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>3D BASIC CREATOR V5</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+<section id="menu">
+
+
+<h2>3D BASIC CREATOR V5</h2>
+
+
+<select id="figura">
+
+<option value="cubo">Cubo</option>
+<option value="esfera">Esfera</option>
+<option value="piramide">Pirámide</option>
+<option value="prisma">Prisma triangular</option>
+<option value="cuadro">Cuadro</option>
+<option value="circulo">Círculo</option>
+<option value="esfinge">Cabeza de Esfinge</option>
+
+</select>
+
+
+<button onclick="modo('translate')">
+🖐 Mover
+</button>
+
+<button onclick="modo('rotate')">
+🔄 Rotar
+</button>
+
+
+<button onclick="modo('scale')">
+📏 Escalar
+</button>
+
+
+<label>Escala</label>
+
+<input 
+id="escala"
+type="range"
+min=".5"
+max="3"
+step=".1"
+value="1">
+
+
+<label>Luz</label>
+
+<input
+id="luzControl"
+type="range"
+min="0"
+max="5"
+step=".1"
+value="2">
+
+
+<div id="medidas"></div>
+
+
+</section>
+
+
+
+
+<section id="creditos">
+
+Desarrollado por:<br>
+
+<b>
+Lic. Carlos Eduardo Sepúlveda Toro
+</b>
+
+<br>
+
+Licenciado en Comunicación e Informática Educativa
+
+<br>
+
+Diseñador Gráfico y Desarrollador Multimedia
+
+</section>
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.128/examples/js/controls/OrbitControls.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.128/examples/js/controls/TransformControls.js"></script>
+
+
+
+<script src="js/luces.js"></script>
+<script src="js/objetos.js"></script>
+<script src="js/controles.js"></script>
+<script src="js/medidas.js"></script>
+<script src="js/interfaz.js"></script>
+<script src="js/main.js"></script>
+
+
+</body>
+
+</html>
